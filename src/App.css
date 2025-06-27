@@ -1,0 +1,68 @@
+*{
+  margin: 0rem;
+  padding: 0rem;
+  box-sizing: border-box;
+  position: relative;
+  font-size: 3rem;
+}
+
+html{
+  font-size: 62.5%;
+}
+
+.container{
+  width: 50%;
+  height: 100vh;
+  background-color: rgb(183, 190, 190);display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: fixed;
+  margin-left: 25%;
+  margin-right: 25%;
+  box-shadow: 10px 20px 30px rgba(0, 0, 0, 0.3);
+  margin-top: 3rem;
+  margin-bottom: 10rem;
+  border-radius: 4rem;
+}
+
+.header{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 3rem;
+}
+
+.header h1{
+  text-transform: capitalize;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.newGameBtn{
+ padding: 1rem 3rem;
+ border-radius: 20px;
+ text-transform: capitalize;
+ font-size: 2rem;
+}
+
+.numBtn{
+ padding:2rem;
+}
+
+.gameBody{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4rem;
+}
+
+.guessBtn{
+  padding: 2rem;
+  border-radius: 10px;
+}
+
+button:disabled{
+ background-color: grey;
+ pointer-events: none;
+}
