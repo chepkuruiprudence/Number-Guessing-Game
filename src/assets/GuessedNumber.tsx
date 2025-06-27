@@ -84,7 +84,7 @@ type reducerAction = {
     const guess = +state.guessedNumber;
 
     if (guess === state.secretNumber) {
-      dispatch({ type: "SET_RESPONSE", payload: `Hurray!!! You won.`});
+      dispatch({ type: "SET_RESPONSE", payload: `Hurray!!! You won. You scored ${state.numberOfTrials*10}%`});
       dispatch({ type: "GAME_OVER" });
     } else if (guess > state.secretNumber) {
       dispatch({
@@ -96,7 +96,7 @@ type reducerAction = {
     } else if (guess < state.secretNumber) {
       dispatch({
         type: "SET_RESPONSE",
-        payload: `${state.guessedNumber} is low. You scored ${state.numberOfTrials*10}%`,
+        payload: `${state.guessedNumber} is low.`,
       });
       dispatch({ type: "DECREMENT_TRIAL" });
       handleLost();
