@@ -1,5 +1,5 @@
 import './App.css'
-import GameUI from './assets/GuessedNumber'
+import GameUI from './components/GuessedNumber'
 
 function App() {
 
